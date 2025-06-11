@@ -1,0 +1,30 @@
+.xyz{
+    width: 60%;
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    /* text-align: center; */
+}
+.xyz-up{
+    /* width: 100%; */
+display: flex;
+justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: 5px solid black; */
+    /* top: 100px; */
+}
+.date-input,.time-input,.zone-input,.weather-input,.shipment-input{
+    width: 333px;
+    padding: 7px;
+}
+shipment-input{
+    padding: 0 0 5px 0;
+}
+.predict-button{
+    margin: 10 0;
+}

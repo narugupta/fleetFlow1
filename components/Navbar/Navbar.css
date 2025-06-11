@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #1f1004; */
+    /* color: white; */
+    padding: 15px;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    width: 60%;
+}
+.links{
+    padding: 4px 8px;
+}
+.page-name img{
+    /* display: flex; */
+    display: inline;
+    height: 20px;
+    margin: 5px;
+    /* flex-direction: column; */
+}

@@ -1,0 +1,26 @@
+/* 12291062_Wavy_Tech-20_Single-08 1 */
+.right-home img{
+width: 632px;
+/* height: 667.85px; */
+/* height: 60vh; */
+height: 632px;
+/* left: 773px; */
+/* top: 193px; */
+}
+ .home-page{
+    display: flex;
+    background-color: white;
+ }
+ .left-home{
+    position: relative;
+     width: 60vw;
+     /* border: 2px solid red; */
+     /* height: 70vh; */
+ }
+ .right-home{
+    position: relative;
+    width: 40vw;
+    /* border: 2px solid blue; */
+    /* height: 70vh; */
+ }
+

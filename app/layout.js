@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import {ReduxProvider} from "@/store/reduxProvider";
+// import {ReduxProvider}
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +26,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ReduxProvider>
+          <Navbar />
+           {/* <div className="relative h-full w-full bg-gray-100">
+          <div className="bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] min-h-[87.5vh]"> */}
         {children}
+        {/* </div>
+        </div> */}
+        <Footer />
+        </ReduxProvider>
       </body>
     </html>
   );
