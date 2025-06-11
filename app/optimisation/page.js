@@ -7,7 +7,7 @@ import DemandPredictor from "@/components/modelPrediction";
 
 
 
-const OptimisationContent = () => {
+function OptimisationContent() {
     const searchParams = useSearchParams();
   const volume = searchParams.get("volume");
   return (
@@ -30,7 +30,7 @@ const OptimisationContent = () => {
          <DemandPredictor />
       </div>
     </div>
-  )
+  );
 }
 
 export default function Page(){
