@@ -1,13 +1,13 @@
 "use client";
 
-import React from 'react'
+import React,{Suspense} from 'react'
 import "./page.css"
 import { useSearchParams } from "next/navigation";
 import DemandPredictor from "@/components/modelPrediction";
 
 
 
-const Page = () => {
+const OptimisationContent = () => {
     const searchParams = useSearchParams();
   const volume = searchParams.get("volume");
   return (
@@ -33,4 +33,10 @@ const Page = () => {
   )
 }
 
-export default Page
+export default function Page(){
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <OptimisationContent />
+    </Suspense>
+  );
+}

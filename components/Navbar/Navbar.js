@@ -4,7 +4,7 @@ import React from 'react';
 import './Navbar.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navbar flex justify-between items-center p-4 shadow bg-white">
         {/* <div className="logo"><img src="distribution.png" alt="" /></div> */}
         <Link href={"/"}><div className="page-name text-xl font-bold">
-          <Image src="distribution.png" alt="" />fleetFlow</div></Link>
+          <img src="/distribution.png" alt="" />fleetFlow</div></Link>
 
         <div className="options flex gap-4">
           {/* About Us */}

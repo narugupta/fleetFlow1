@@ -1,7 +1,7 @@
 import React from 'react';
 import "./home.css"
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="right-home">
-                    <Image src="./image.png" alt="" />
+                    <img src="./image.png" alt="" />
                 </div>
             </div>
         </div>
