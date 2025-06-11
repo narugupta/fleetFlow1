@@ -7,7 +7,7 @@ import DemandPredictor from "@/components/modelPrediction";
 
 
 
-const page = () => {
+const Page = () => {
     const searchParams = useSearchParams();
   const volume = searchParams.get("volume");
   return (
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
